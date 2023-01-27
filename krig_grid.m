@@ -95,7 +95,6 @@ alt=min(ALT):.1:max(ALT);
 [xx,yy,zz]=meshgrid(long,lat,alt);
 pos_est=[xx(:) yy(:) zz(:)];
 [gamma,hc,np,av_dist]=semivar_exp(pos_known,val_known,20);
-disp(max(hc))
 Nug = num2str(min(gamma));
 Sill = num2str(max(gamma)-min(gamma));
 Range = num2str(max(hc));
